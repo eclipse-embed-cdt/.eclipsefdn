@@ -27,8 +27,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       description: "An ANTLR based 'Liquid Template' parser and rendering engine.",
       has_issues: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('assets') {
@@ -36,8 +34,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       default_branch: "master",
       dependabot_alerts_enabled: false,
       description: "Various assets, like images, icons, etc.",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('eclipse-embed-cdt.github.io') {
@@ -52,8 +48,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse-embed-cdt.github.io/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "cdt",
         "eclipse",
@@ -75,8 +69,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       has_projects: false,
       has_wiki: false,
       homepage: "http://eclipse-embed-cdt.github.io/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "arm",
         "cdt",
@@ -98,8 +90,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       has_projects: false,
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "epp",
@@ -117,8 +107,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse-embed-cdt.github.io/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jekyll",
         "static"
@@ -159,8 +147,6 @@ orgs.newOrg('eclipse-embed-cdt') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse-embed-cdt.github.io/web-preview/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jekyll"
       ],
