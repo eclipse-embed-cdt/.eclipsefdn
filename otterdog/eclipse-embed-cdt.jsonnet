@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-embed-cdt') {
   settings+: {
     billing_email: "webmaster@eclpse-foundation.org",
     default_repository_permission: "none",
-    default_workflow_permissions: "write",
     dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
@@ -16,6 +15,9 @@ orgs.newOrg('eclipse-embed-cdt') {
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,
+    workflows+: {
+      default_workflow_permissions: "write",
+    },
   },
   _repositories+:: [
     orgs.newRepo('Liqp') {
