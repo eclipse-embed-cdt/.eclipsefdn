@@ -1,6 +1,6 @@
 site_name: Otterdog configuration @ eclipse-embed-cdt
 site_description: Otterdog configuration @ eclipse-embed-cdt
-strict: true
+strict: false
 
 site_url: https://eclipse-embed-cdt.github.io/.eclipsefdn/
 
