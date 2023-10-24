@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-embed-cdt') {
   settings+: {
     billing_email: "webmaster@eclpse-foundation.org",
-    default_repository_permission: "none",
     dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
@@ -30,6 +29,9 @@ orgs.newOrg('eclipse-embed-cdt') {
       has_issues: false,
       homepage: "",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('assets') {
       allow_merge_commit: true,
@@ -39,6 +41,9 @@ orgs.newOrg('eclipse-embed-cdt') {
       dependabot_alerts_enabled: false,
       description: "Various assets, like images, icons, etc.",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('eclipse-embed-cdt.github.io') {
       allow_merge_commit: true,
@@ -62,6 +67,9 @@ orgs.newOrg('eclipse-embed-cdt') {
         "web"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
@@ -88,6 +96,9 @@ orgs.newOrg('eclipse-embed-cdt') {
         "risc-v"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('org.eclipse.epp.packages') {
       allow_merge_commit: true,
@@ -108,6 +119,9 @@ orgs.newOrg('eclipse-embed-cdt') {
         "signing-profiles-enabled"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('web-jekyll') {
       allow_merge_commit: true,
@@ -124,6 +138,9 @@ orgs.newOrg('eclipse-embed-cdt') {
         "static"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       webhooks: [
         orgs.newRepoWebhook('https://notify.travis-ci.org') {
           events+: [
@@ -165,6 +182,9 @@ orgs.newOrg('eclipse-embed-cdt') {
         "jekyll"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
