@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-embed-cdt') {
   settings+: {
-    billing_email: "webmaster@eclpse-foundation.org",
     dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
