@@ -7,8 +7,6 @@ orgs.newOrg('eclipse-embed-cdt') {
     dependency_graph_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse Embedded CDT (C/C++ Development Tools)",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     readers_can_create_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
@@ -44,6 +42,7 @@ orgs.newOrg('eclipse-embed-cdt') {
     },
     orgs.newRepo('eclipse-embed-cdt.github.io') {
       allow_merge_commit: true,
+      allow_squash_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
