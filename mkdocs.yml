@@ -38,5 +38,8 @@ not_in_nav: |
 
 watch: []
 
+extra:
+  org_id: eclipse-embed-cdt
+
 extra_css:
   - stylesheets/extra.css
