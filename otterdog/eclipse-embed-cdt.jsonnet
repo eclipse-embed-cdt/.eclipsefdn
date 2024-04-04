@@ -7,7 +7,6 @@ orgs.newOrg('eclipse-embed-cdt') {
     dependency_graph_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse Embedded CDT (C/C++ Development Tools)",
-    readers_can_create_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
