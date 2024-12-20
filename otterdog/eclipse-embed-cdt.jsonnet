@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-embed-cdt') {
+orgs.newOrg('iot.embed-cdt', 'eclipse-embed-cdt') {
   settings+: {
     description: "",
     name: "Eclipse Embedded CDT (C/C++ Development Tools)",
